@@ -7,16 +7,16 @@
 
 //Here pass respective objects
 
-//"screens" is an array containing name of the images
+**"screens" is an array containing name of the images**
 
 let objRLib = RLibrary()
 
 objRLib.setPagingViews(scrollView, pageControl: pageControl, screenArray: screens, currentView: self.view)
 
 
-# Add following methods
+## Add following methods
 
-# MARK : TO CHANGE WHILE CLICKING ON PAGE CONTROL
+### MARK : TO CHANGE WHILE CLICKING ON PAGE CONTROL
     func changePage(sender: AnyObject) -> () {
         let x = CGFloat(pageControl.currentPage) * scrollView.frame.size.width
         scrollView.setContentOffset(CGPointMake(x, 0), animated: true)
