@@ -11,7 +11,8 @@ objRLib.setPagingViews(scrollView, pageControl: pageControl, screenArray: screen
 
 
 //Add following methods
- // MARK : TO CHANGE WHILE CLICKING ON PAGE CONTROL
+
+// MARK : TO CHANGE WHILE CLICKING ON PAGE CONTROL
     func changePage(sender: AnyObject) -> () {
         let x = CGFloat(pageControl.currentPage) * scrollView.frame.size.width
         scrollView.setContentOffset(CGPointMake(x, 0), animated: true)
